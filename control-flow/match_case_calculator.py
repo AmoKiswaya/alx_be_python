@@ -1,5 +1,5 @@
 num1 = int(input("Enter the first number: "))
-operation = input("Choose the opertion (+, -, *, /): ")
+operation = input("Choose the operation (+, -, *, /): ")
 num2 = int(input("Enter the second number: "))
 
 
