@@ -1,18 +1,17 @@
 def perform_operation(num1, num2, operation):
 
-    match operation:
-        case "add":
+    if operation == "add":
             return num1 + num2
-        case "subtract":
+    elif operation == "subtract":
             return abs(num1 - num2) 
-        case "multiply":
+    elif operation == "multiply":
             return num1 * num2
-        case "divide":
+    elif operation ==  "divide":
             try:
                 return abs(num1 / num2) 
             except ZeroDivisionError:
                 return "Can't divide by zero"
-        case _:
+    else:
             return "Invalid choice" 
     
 
