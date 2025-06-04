@@ -1,8 +1,13 @@
 FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
 CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
-user_temp = int(input("Enter the temperature to convert: ")) 
+user_temp = input("Enter the temperature to convert: ")
 choice = input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
 
+if user_temp.isdigit():
+    user_temp = int(user_temp)
+else:
+    print("Invalid temperature. Please enter a numeric value")
+    exit()
 
 def convert_to_celsius(fahrenheit):
     global  FAHRENHEIT_TO_CELSIUS_FACTOR
