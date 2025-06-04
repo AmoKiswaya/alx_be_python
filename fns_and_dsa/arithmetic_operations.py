@@ -7,10 +7,10 @@ def perform_operation(num1, num2, operation):
     elif operation == "multiply":
             return num1 * num2
     elif operation ==  "divide":
-            try:
-                return abs(num1 / num2) 
-            except ZeroDivisionError:
-                return "Can't divide by zero"
+           if num2 == 0:
+                  return "Can't use zero"
+           else:
+                  return num1 / num2
     else:
             return "Invalid choice" 
     
