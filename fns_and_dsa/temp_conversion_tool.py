@@ -6,7 +6,7 @@ choice = input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
 if user_temp.isdigit():
     user_temp = int(user_temp)
 else:
-    print("Invalid temperature. Please enter a numeric value")
+    print("Invalid temperature. Please enter a numeric value.") 
     exit()
 
 def convert_to_celsius(fahrenheit):
